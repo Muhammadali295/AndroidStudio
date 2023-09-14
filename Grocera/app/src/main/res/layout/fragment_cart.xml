@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:elevation="3dp"
+    android:background="@drawable/top_background"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="4dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/white"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/iconn2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="14dp"
+                        android:text="GROUSERA"
+                        android:textColor="#8F0000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width='match_parent'
+            android:layout_height="3dp"
+            android:background="#8F0000"
+            android:layout_marginBottom="20dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#8F0000"
+                android:minHeight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY CART"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:id="@+id/preview"
+            android:background="@color/white"
+            android:layout_marginBottom="30dp">
+
+        </ListView>
+    </LinearLayout>
+
+</ScrollView>

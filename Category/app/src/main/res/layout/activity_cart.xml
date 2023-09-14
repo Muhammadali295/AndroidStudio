@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color">
+<!--    tools:context=".MainActivity"-->
+
+
+    <LinearLayout
+        android:id="@+id/mainLayout2"
+        android:orientation="vertical"
+        tools:context=".CartFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/top_background"
+            android:id="@+id/panel2"
+            >
+            <ImageView
+                android:id="@+id/btnback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="CART"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+
+                />
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2"
+            tools:listitem="@layout/cart_row"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/Totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:text="Total: $ 26"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+        <Button
+            android:id="@+id/placeOrderButton"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:text="Place Order"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+
+    </LinearLayout>
+</ScrollView>

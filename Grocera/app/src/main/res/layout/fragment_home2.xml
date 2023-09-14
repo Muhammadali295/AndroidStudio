@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/top_background"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="0dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/white"
+                >
+                                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/iconn2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="14dp"
+                        android:text="GROUSERA"
+                        android:textColor="#8F0000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width='match_parent'
+            android:layout_height="3dp"
+            android:background="#8F0000"
+            android:layout_marginBottom="20dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#8F0000"
+                android:minHeight="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Welcome"
+                    android:textColor="@color/white"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40px"
+                    android:text="_@Username"
+                    android:textColor="@color/white"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services We Provide..."
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viewpager"
+            android:background="@drawable/sliderrr"
+            android:padding="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="----------QUICK ACCESS----------"
+                android:textSize="22dp"
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+        <!--    Cards-->
+        <!--        card1-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/viewbg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:textStyle="bold"
+                android:text="Snacks"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:padding="18dp"
+                android:text="show more"
+                android:textColor="@color/black"
+                android:id="@+id/snacks_show_more"/>
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/bsb"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <!--        card 2-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/blackbg">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/dairy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="25dp"
+                android:text="Dairy Products"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show more"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="12dp"
+                android:background="#00000000"
+                android:textColor="@color/white"
+                android:id="@+id/dairy_show_more"/>
+
+
+        </RelativeLayout>
+        <!--        card3-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/viewbg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:textStyle="bold"
+                android:text="Frozen items"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show more"
+                android:layout_alignParentBottom="true"
+                android:padding="18dp"
+                android:background="#00000000"
+                android:textColor="@color/black"
+                android:id="@+id/frozen_show_more"/>
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/frozennnn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+        </RelativeLayout>
+        <!--        card 4-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/blackbg">
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                app:srcCompat="@drawable/drinks"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="Drinks"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:layout_alignParentRight="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show more"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="12dp"
+                android:background="#00000000"
+                android:id="@+id/drinks_show_more"
+                android:textColor="@color/white"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

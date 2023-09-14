@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/snack" />
+
+    <TextView
+        android:id="@+id/comp_nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iphone"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lays"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        />
+
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1000"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <TextView
+        android:id="@+id/available_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="available"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        android:textColor="@color/purple_500" />
+
+    <Button
+        android:id="@+id/cartbtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        app:icon="@drawable/ic_baseline_add_box_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/teal_700"
+        android:text="Add to cart"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+</LinearLayout>
